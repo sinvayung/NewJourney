@@ -4,5 +4,7 @@
     <string name="app_name">AndroidSample</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="row_title">Long Text Title</string>
+    <string name="row_content">If you have decided not to use the recommended HTTPS method, we can use SSH keys to establish a secure connection between your computer and GitHub. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.</string>
 
 </resources>
