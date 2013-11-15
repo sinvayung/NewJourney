@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.newjourney.android"
+<manifest package="com.newjourney.android"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/> 
 
     <application
         android:allowBackup="true"
@@ -22,8 +26,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.ScrollViewSample"></activity>
-        <activity android:name=".animation.ObjectAnimationSample"></activity>
+        <activity android:name=".animation.ZoomActivity" />
+        <activity android:name=".widget.DotsViewSample" >
+        </activity>
+        <activity android:name=".animation.AnimActivity" >
+        </activity>
+        <activity android:name=".media.AudioCaptureActivity" >
+        </activity>
+        <activity android:name=".asynctask.AsyncTaskAActivitity" >
+        </activity>
+        <activity android:name=".demo.WebViewActivity"></activity>
     </application>
 
 </manifest>
